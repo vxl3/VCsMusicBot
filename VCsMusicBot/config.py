@@ -3,8 +3,8 @@ from os import path
 from os import getenv
 from dotenv import load_dotenv
 
-if os.path.exists("local.env"):
-    load_dotenv("local.env")
+if os.path.exists("config.py"):
+    load_dotenv("config.py")
 
 que = {}
 SESSION_NAME = getenv("SESSION_NAME", "session")
